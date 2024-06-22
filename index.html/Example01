@@ -7,7 +7,6 @@
     <form action="/cgi-bin/index.cgi" method="post"><br>
         <label for="campo">Digite o comando:</label><br><br>
         <input type="text" id="campo" name="comando"><br><br>
-        <input type="text" id="campo" name="comando"><br><br>
         <input type="submit" value="Executar">
         <input type="reset" value="Limpar">
     </form>
