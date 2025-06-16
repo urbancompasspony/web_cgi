@@ -1,0 +1,16 @@
+bash# Criar script de teste
+cat > /var/www/samba-admin/cgi-bin/test.cgi << 'EOF'
+#!/bin/bash
+echo "Content-Type: text/html"
+echo ""
+echo "<html><body>"
+echo "<h1>CGI Test</h1>"
+echo "<p>Data: $(date)</p>"
+echo "<p>Usuário: $(whoami)</p>"
+echo "<p>PATH: $PATH</p>"
+echo "</body></html>"
+EOF
+
+chmod 755 /var/www/samba-admin/cgi-bin/test.cgi
+
+# Testar: http://localhost/cgi-bin/test.cgi
